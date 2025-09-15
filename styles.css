@@ -1,0 +1,146 @@
+
+:root{
+  --penn-blue:#011F5B;
+  --penn-red:#990000;
+  --bg:#f3f5f8;
+  --panel:#ffffff;
+  --text:#0f172a;
+  --muted:#6b7280;
+  --line:#e5e7eb;
+  --accent:#2454ff;
+  --shadow: 0 8px 20px rgba(2,6,23,.06);
+  --radius:14px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  color:var(--text);
+  background:var(--bg);
+}
+
+/* Header */
+.site-header{
+  position:sticky; top:0; z-index:10;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:14px 20px;
+  background:linear-gradient(180deg, var(--penn-blue), #0b2b73);
+  color:#fff;
+  border-bottom:4px solid var(--penn-red);
+}
+.site-header .brand{display:flex; align-items:center; gap:14px}
+.site-header h1{font-size:clamp(18px,2.2vw,32px); margin:0; font-weight:700}
+.penn-logo{
+  width:56px; height:28px; border-radius:4px;
+  display:grid; place-items:center;
+  background:#fff; color:var(--penn-blue); font-weight:800;
+  letter-spacing:.5px; padding:4px 10px;
+}
+
+/* layout */
+.layout{max-width:1200px; margin:24px auto; padding:0 16px}
+.layout-3col{
+  display:grid; gap:22px;
+  grid-template-columns: 290px 1fr 340px;
+}
+@media (max-width: 1080px){
+  .layout-3col{grid-template-columns: 260px 1fr 300px}
+}
+@media (max-width: 900px){
+  .layout-3col{grid-template-columns: 1fr}
+}
+
+/* panels */
+.panel{
+  background:var(--panel);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:18px;
+  border:1px solid var(--line);
+}
+.panel h2{margin:0 0 12px 0; font-size:20px; color:var(--penn-blue)}
+
+/* lists */
+.list{list-style:none; margin:0; padding:0}
+.list-courses li+li{margin-top:10px}
+.list-item{
+  display:block; width:100%;
+  text-align:left;
+  padding:12px 14px;
+  border:2px solid #161616;
+  border-radius:8px;
+  background:#fff;
+  font-weight:600;
+  cursor:pointer;
+}
+.list-compact .list-item{padding:10px 12px}
+.list-courses.tight .list-item{border-width:2px}
+
+/* inputs */
+.input-wrap{
+  display:flex; align-items:center; gap:8px;
+  border:2px solid #161616; border-radius:8px; padding:8px 10px; margin-bottom:12px;
+  background:#fff;
+}
+.input-wrap input{
+  border:0; outline:0; font-size:16px; flex:1; background:transparent
+}
+.input-icon{opacity:.7}
+
+/* buttons */
+.btn{
+  --bg:#fff; --fg:#111; --bd:#161616;
+  display:inline-flex; align-items:center; justify-content:center;
+  gap:8px; font-weight:700; font-size:14px; letter-spacing:.1px;
+  padding:12px 14px; border-radius:999px; border:2px solid var(--bd);
+  background:var(--bg); color:var(--fg); cursor:pointer; text-decoration:none;
+  box-shadow:0 2px 0 #00000020;
+}
+.btn.block{display:flex; width:100%}
+.btn-primary{--bg: var(--penn-red); --fg:#fff; --bd:#3a0000}
+.btn-secondary{--bg:#f8fafc; --fg:#111; --bd:#1f2937}
+.btn-alert{--bg:#0b6cf7; --fg:#fff; --bd:#0b3ea5}
+.icon-btn{border:0; background:#f3f4f6; padding:6px 10px; border-radius:8px; cursor:pointer}
+
+/* details panel */
+.course-details h2{font-size:24px; margin:0}
+.subtitle{margin:4px 0 12px 0; color:var(--muted); font-weight:600}
+.description{line-height:1.6; color:#1f2937}
+.badges{display:flex; gap:10px; flex-wrap:wrap; padding:0; margin:14px 0}
+.badge{background:#111827; color:#fff; padding:8px 10px; border-radius:999px; font-size:12px; box-shadow:0 2px 0 #00000020}
+.timeplace{background:#0b2b73; color:#fff; padding:10px 12px; border-radius:10px; font-weight:700; margin:10px 0}
+.seats{background:#eef2ff; color:#1d4ed8; padding:10px 12px; border-radius:10px; font-weight:700; border:1px dashed #93c5fd}
+
+/* schedule */
+.schedule-panel .list-courses{margin-bottom:12px}
+.mini-calendar{margin-top:10px; border:1px solid var(--line); border-radius:12px; padding:12px}
+.calendar-header{display:flex; align-items:center; justify-content:space-between; margin-bottom:8px; font-weight:700}
+.calendar-grid{
+  display:grid; grid-template-columns: repeat(5, 1fr);
+  gap:6px; height:160px; background:#f8fafc; border:1px dashed #d1d5db; padding:6px; border-radius:8px;
+}
+.calendar-grid div{background:#e5e7eb; border-radius:6px}
+.calendar-grid .event{background:#a7f3d0; font-size:12px; display:grid; place-items:center}
+
+/* filters */
+.filters-panel .select{
+  width:100%; background:#fff; border:2px solid #161616; border-radius:8px;
+  padding:12px 14px; text-align:left; font-weight:700; cursor:pointer;
+}
+.filter-select + .filter-select{margin-top:10px}
+
+/* side blocks */
+.past-searches h3{font-size:14px; color:var(--muted); margin:16px 0 8px 0}
+
+/* footer */
+.site-footer{max-width:1200px; margin:24px auto; padding:0 16px 32px; color:#6b7280}
+
+@media (max-width: 900px){
+  .panel{padding:16px}
+  .schedule-panel .bottom-actions .btn{margin-top:8px}
+  .list-courses li+li{margin-top:8px}
+  .timeplace, .seats{font-size:14px}
+  .badge{font-size:11px}
+}

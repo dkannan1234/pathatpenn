@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Penn Course Registration — Advanced Search</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="penn-logo" aria-hidden="true">Penn</div>
+      <h1>Welcome to Penn Course Registration</h1>
+    </div>
+    <nav class="top-actions">
+      <a class="btn" href="index.html">← Back to Home</a>
+    </nav>
+  </header>
+
+  <main class="layout layout-3col">
+    <!-- Left: Advanced Search Filters -->
+    <section class="panel filters-panel" aria-labelledby="filters-title">
+      <h2 id="filters-title">Advanced Search</h2>
+
+      <label class="input-wrap">
+        <span class="input-icon" aria-hidden="true">🔎</span>
+        <input type="search" placeholder="Key Words" />
+      </label>
+
+      <div class="filter-select"><button class="select">Fall 2025 ▾</button></div>
+      <div class="filter-select"><button class="select">Subject ▾</button></div>
+      <div class="filter-select"><button class="select">School ▾</button></div>
+      <div class="filter-select"><button class="select">Level ▾</button></div>
+      <div class="filter-select"><button class="select">Schedule Type ▾</button></div>
+      <div class="filter-select"><button class="select">Credit ▾</button></div>
+      <div class="filter-select"><button class="select">Campus/Online ▾</button></div>
+      <div class="filter-select"><button class="select">Course Attribute ▾</button></div>
+
+      <div class="cta-row">
+        <button class="btn btn-primary block">Apply Filters</button>
+      </div>
+    </section>
+
+    <!-- Center: Course Details (same as home for continuity) -->
+    <section class="panel details-panel" aria-labelledby="course-title">
+      <div class="course-details">
+        <h2 id="course-title">CIS 2400: Computer Systems</h2>
+        <p class="subtitle">Instructor: Benjamin Franklin</p>
+        <p class="description">
+          You know how to program, but do you know how computers really work? This bottom‑up course covers hardware to C programming, 
+          preparing you for operating systems, compilers, and more.
+        </p>
+
+        <ul class="badges">
+          <li class="badge">CIS Undergraduate Degree Requirement</li>
+          <li class="badge">SEAS Elective</li>
+        </ul>
+
+        <p class="timeplace">TR 1:45 PM – 3:15 PM in CHEM 102 (8/26–12/8)</p>
+        <p class="seats">Seats Available: <strong>0/150</strong></p>
+
+        <div class="cta-row">
+          <button class="btn btn-alert">Course Alert Sign Up</button>
+          <button class="btn btn-secondary">View Student Reviews</button>
+        </div>
+
+        <div class="cta-row">
+          <button class="btn btn-primary block">ADD TO SCHEDULE</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right: Schedule -->
+    <aside class="panel schedule-panel" aria-labelledby="schedule-title">
+      <h2 id="schedule-title">Your Schedule</h2>
+      <ul class="list list-courses tight">
+        <li><span class="list-item">CIS 4120: Human Computer Interaction</span></li>
+        <li><span class="list-item">SAST 001: Introduction to Modern India</span></li>
+        <li><span class="list-item">CIS 3200: Introduction to Algorithms</span></li>
+        <li><span class="list-item">CPLN 5500: Transportation Planning</span></li>
+        <li><span class="list-item">URBS 4000: Senior Seminar</span></li>
+      </ul>
+
+      <div class="mini-calendar">
+        <div class="calendar-header">
+          <span>Week at a glance</span>
+          <button class="icon-btn" aria-label="Expand calendar">⤢</button>
+        </div>
+        <div class="calendar-grid" aria-hidden="true">
+          <div></div><div></div><div></div><div></div><div></div>
+          <div></div><div class="event">CIS 2400</div><div></div><div class="event">URBS</div><div></div>
+          <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <button class="btn btn-secondary block">Import to Google Calendar</button>
+      </div>
+
+      <div class="bottom-actions">
+        <button class="btn btn-secondary block">Explore Programs</button>
+        <button class="btn btn-secondary block">Degree Audit and Advising</button>
+      </div>
+    </aside>
+  </main>
+
+</body>
+</html>

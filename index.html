@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Penn Course Registration — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="penn-logo" aria-hidden="true">Penn</div>
+      <h1>Welcome to Penn Course Registration</h1>
+    </div>
+    <nav class="top-actions">
+      <a class="btn btn-primary" href="advancedsearch.html">Advanced Search</a>
+    </nav>
+  </header>
+
+  <main class="layout layout-3col">
+    <!-- Left: Search Classes -->
+    <section class="panel search-panel" aria-labelledby="search-title">
+      <h2 id="search-title">Search Classes</h2>
+
+      <label class="input-wrap" aria-label="Search">
+        <span class="input-icon" aria-hidden="true">🔎</span>
+        <input type="search" placeholder="C..." />
+      </label>
+
+      <ul class="list list-courses">
+        <li><button class="list-item">CIS 2400: Computer Systems</button></li>
+        <li><button class="list-item">College 16-Sector Requirement</button></li>
+        <li><button class="list-item">Cinema in 18<sup>th</sup> Century</button></li>
+        <li><button class="list-item">Introduction to Cognitive Science</button></li>
+        <li><button class="list-item">Dr. Chris Hemsworth</button></li>
+      </ul>
+
+      <a class="btn btn-secondary block" href="advancedsearch.html">Advanced Search</a>
+
+      <div class="past-searches">
+        <h3>Past Searches</h3>
+        <ul class="list list-compact">
+          <li><button class="list-item small">FNAR 1200: Painting II</button></li>
+          <li><button class="list-item small">URBS 1050: Urban Technology</button></li>
+          <li><button class="list-item small">CIS 4120: Human Computer Interaction</button></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Center: Course Details -->
+    <section class="panel details-panel" aria-labelledby="course-title">
+      <div class="course-details">
+        <h2 id="course-title">CIS 2400: Computer Systems</h2>
+        <p class="subtitle">Instructor: Benjamin Franklin</p>
+        <p class="description">
+          You know how to program, but do you know how computers really work? How do millions of transistors come together to form a complete computing system? 
+          This bottom‑up course begins with transistors and simple computer hardware structures, continues with low‑level programming using primitive machine instructions, 
+          and finishes with an introduction to the C programming language. This course is a broad introduction to computer systems architecture and serves as the foundation 
+          for subsequent courses, such as Computer Organization and Design (<a href="#">CIS 4710</a>), Computer Operating Systems (<a href="#">CIS 3800</a>), and Compilers and Interpreters (<a href="#">CIS 3410</a>).
+        </p>
+
+        <ul class="badges">
+          <li class="badge">CIS Undergraduate Degree Requirement</li>
+          <li class="badge">SEAS Elective</li>
+        </ul>
+
+        <p class="timeplace">TR 1:45 PM – 3:15 PM in CHEM 102 (8/26–12/8)</p>
+        <p class="seats">Seats Available: <strong>0/150</strong></p>
+
+        <div class="cta-row">
+          <button class="btn btn-alert">Course Alert Sign Up</button>
+          <button class="btn btn-secondary">View Student Reviews</button>
+        </div>
+
+        <div class="cta-row">
+          <button class="btn btn-primary block">ADD TO SCHEDULE</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right: Schedule -->
+    <aside class="panel schedule-panel" aria-labelledby="schedule-title">
+      <h2 id="schedule-title">Your Schedule</h2>
+      <ul class="list list-courses tight">
+        <li><span class="list-item">CIS 4120: Human Computer Interaction</span></li>
+        <li><span class="list-item">SAST 001: Introduction to Modern India</span></li>
+        <li><span class="list-item">CIS 3200: Introduction to Algorithms</span></li>
+        <li><span class="list-item">CPLN 5500: Transportation Planning</span></li>
+        <li><span class="list-item">URBS 4000: Senior Seminar</span></li>
+      </ul>
+
+      <div class="mini-calendar">
+        <div class="calendar-header">
+          <span>Week at a glance</span>
+          <button class="icon-btn" aria-label="Expand calendar">⤢</button>
+        </div>
+        <div class="calendar-grid" aria-hidden="true">
+          <!-- Static placeholder grid -->
+          <div></div><div></div><div></div><div></div><div></div>
+          <div></div><div class="event">CIS 2400</div><div></div><div class="event">URBS</div><div></div>
+          <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <button class="btn btn-secondary block">Import to Google Calendar</button>
+      </div>
+
+      <div class="bottom-actions">
+        <button class="btn btn-secondary block">Explore Programs</button>
+        <button class="btn btn-secondary block">Degree Audit and Advising</button>
+      </div>
+    </aside>
+  </main>
+
+</body>
+</html>
